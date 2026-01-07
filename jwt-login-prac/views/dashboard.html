@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome to your Dashboard</h1>
+    <p>Here's some random placeholder text just to simulate a real dashboard:</p>
+    <ul>
+      <li>You have 3 unread notifications</li>
+      <li>Your profile is 80% complete</li>
+      <li>Latest login: Just now</li>
+    </ul>
+
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="/js/Dashboard.js"></script>
+  <script>
+    history.pushState(null, "", location.href);
+    window.onpopstate = function () {
+      history.go(1); 
+    };
+  </script>
+</body>
+</html>

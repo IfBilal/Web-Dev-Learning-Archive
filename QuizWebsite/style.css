@@ -1,0 +1,134 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #121826;
+}
+header {
+  margin-top: 0;
+  height: 20%;
+  background-color: #1a2035;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+h1 {
+  color: #e2f0fd;
+}
+#quiz-wrapper {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#quiz-box {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  color: #fdfdfd;
+  background-color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+#question {
+  text-align: center;
+  color: rgb(158, 158, 158);
+  font-size: 2rem;
+}
+.question-no{
+    color: rgb(182, 180, 180);
+}
+.submit {
+  display: block;
+  margin: 50px auto;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+.submit:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.02);
+}
+
+#answer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.answerInput {
+  display: block;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #b9bec9;
+}
+.answerButton {
+  border: 1px solid #cbd5e1;
+  width: 150px;
+  color: #1e293b;
+  margin: 10px;
+  background-color: rgb(210, 207, 207);
+  border-radius: 8px;
+  padding: 12px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.answerButton:hover {
+  transform: scale(1.02);
+  background-color: #83888d;
+}
+.answerSelected {
+  background-color: rgb(137, 149, 192);
+}
+
+#answer-type {
+  font-size: 24px;
+  font-weight: 800px;
+  text-align: center;
+}
+
+.timer{
+    width: 20%;
+    height: 10%;
+    background-color: #1a2035;
+    color: rgb(219, 46, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  #quiz-box {
+    width: 75%;
+  }
+  .timer{
+    width: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+    #quiz-box {
+      width: 90%;
+    }
+    .timer{
+        width: 60%;
+    }
+  }

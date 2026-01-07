@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Signup</h2>
+    <form action="/signup" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+      <button type="submit">Signup</button>
+    </form>
+    <p class="response"></p>
+
+    <p>Already have an account? <a href="/">Login here</a></p>
+  </div>
+  <script src="/js/SignUp.js"></script>
+</body>
+</html>
